@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Contacto</title>
+    <link rel="stylesheet" href="assets/AContactos.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <header><h1>Agregar Contacto</h1></header>
+    <div class="contact-form">
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="text" id="phone" placeholder="Teléfono" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Dirección" required>
+        <button id="addContact">Agregar Contacto</button>
+    </div>
+
+    <h2>Lista de Contactos</h2>
+    <ul class="contact-list" id="contactList">
+        <li>Juan Pérez - 123-456-7890 - juan.perez@example.com - Calle Falsa 123</li>
+        <li>María López - 234-567-8901 - maria.lopez@example.com - Avenida Siempre Viva 742</li>
+        <li>Carlos García - 345-678-9012 - carlos.garcia@example.com - Boulevard de los Sueños Rotos 456</li>
+    </ul>
+
+    <button id="toggleMenu">Mostrar Menú</button>
+    <div id="menu" class="menu" style="display: none;">
+        <ul>
+            <li><a href="Contactos.html">Contactos</a></li>
+            <li><a href="AgregarContactos.html">Agregar Contactos</a></li>
+            <li><a href="ToDoList.html">Tareas</a></li>
+        </ul>
+    </div>
+</body>
+
+    <script src="js/Script.js"></script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="assets/ToDoList.css">
+</head>
+<body>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
+    <main class="todo-container">
+        <section>
+            <label for="taskInput" class="visually-hidden">Nueva tarea</label>
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Agregar nueva tarea"
+                aria-label="Escribe tu nueva tarea aquí"
+            >
+            <select id="priorityInput" aria-label="Selecciona la prioridad">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <div class="align-button">
+                <button class="button-one" id="addTaskButton" aria-label="Agregar tarea">Agregar</button>
+            </div>
+           
+            <ul id="taskList" aria-live="polite" aria-relevant="additions">
+                <!-- Las tareas se añadirán aquí -->
+            </ul>
+        </section>
+    </main>
+
+    <button id="toggleMenu">Mostrar Menú</button>
+    
+    <div id="menu" class="menu" style="display: none;">
+        <ul>
+            <li><a href="Contactos.html">Contactos</a></li>
+            <li><a href="AgregarContactos.html">Agregar Contactos</a></li>
+            <li><a href="ToDoList.html">Tareas</a></li>
+        </ul>
+    </div>
+
+    <script src="js/Script.js"></script>
+</body>
+</html>

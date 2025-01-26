@@ -1,0 +1,172 @@
+header{
+    background-color: #FF6F61; /* Color de fondo del encabezado */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    color: white; /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre el encabezado y el contenido */
+}
+
+body, .todo-container{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    
+    
+}
+
+.todo-container {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.align-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-one {
+    background-color: #FF6F61; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.button-one:hover {
+    background-color: #e65c50; /* Color del botón al pasar el mouse */
+}
+
+#taskList {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el padding */
+}
+
+.task-item {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item button {
+    background-color: transparent;
+    border: none;
+    color: #FF6F61;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-item button:hover {
+    text-decoration: underline;
+}
+
+#toggleMenu {
+    margin-bottom: 10px; /* Espacio entre el botón y el menú */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    background-color: #FF6F61; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+
+#toggleMenu:hover {
+    background-color: #87A9B3; /* Color de fondo al pasar el mouse */
+}
+
+.menu {
+    display: none; /* Ocultar el menú por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    right: 0; /* Alinear a la derecha */
+    top: 0; /* Alinear a la parte superior */
+    width: 600px; /* Ancho del menú */
+    height: 100%; /* Altura completa de la pantalla */
+    background-color: #ffffff; /* Color de fondo del menú */
+    border-left: 1px solid #ddd; /* Borde izquierdo del menú */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+    overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+}
+
+.menu ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el padding */
+    margin: 0; /* Eliminar el margen */
+}
+
+.menu li {
+    margin: 0; /* Sin margen entre los elementos de la lista */
+}
+
+.menu a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color del texto */
+    display: block; /* Hacer que el enlace ocupe todo el ancho */
+    padding: 15px 20px; /* Espaciado interno */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.menu a:hover  {
+  background:#FF6F61;
+  color:#333;
+}
+
+  .menu button{
+        background:#FF6F61;
+        color:#FF6F61;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+  .menu button:hover{
+        background:#FF6F61;
+        color:#FF6F61;
+      }
+    .menu button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #FF6F61;
+        transition:400ms ease all;
+      }
+    .menu button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+     .menu button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
